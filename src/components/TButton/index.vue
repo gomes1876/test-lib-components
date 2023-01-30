@@ -9,7 +9,7 @@
     type,
     variant,
   
-  ]" :style="styleIcon" @click="$emit('click')" :href="href" :target="target" :to="{ name: linkPage }">
+  ]" :style="styleIcon" @click="$emit('click')" :to="{ name: linkPage }">
     <div class="content-button">
       <slot></slot>
     </div>
@@ -39,10 +39,6 @@ export default {
       type: String,
       default: 'primary',
     },
-    iconLeft: {
-      type: String,
-      default: null,
-    },
     disabled: {
       type: Boolean,
       default: false,
@@ -55,31 +51,7 @@ export default {
       type: Boolean,
       default: false,
     },
-    dropdownSlip: {
-      type: Boolean,
-      default: false,
-    },
-    dropdownIcon: {
-      type: Boolean,
-      default: false,
-    },
-    dropdownIconDirection: {
-      type: String,
-      default: 'down',
-    },
-    loading: {
-      type: Boolean,
-      default: false,
-    },
     linkPage: {
-      type: String,
-      default: null,
-    },
-    href: {
-      type: String,
-      default: null,
-    },
-    target: {
       type: String,
       default: null,
     },
@@ -107,7 +79,7 @@ export default {
       }
       if (this.variant) {
         return this.variant == 'primary' ? '#974900' : this.variant == 'danger' ? '#D32F2F' : this.variant == 'warning' ? '#FF9800' : this.variant == 'success' ? '#4CAF50' : '#1976D2'
-      }
+      } 
 
     }
 
@@ -117,6 +89,6 @@ export default {
 
 
 
-  
+
 
 <style scoped src="./t-button.css" />
