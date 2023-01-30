@@ -117,6 +117,6 @@ export default {
 
 
 
+  
 
-
-<style scoped src="./button.css" />
+<style scoped src="./t-button.css" />
