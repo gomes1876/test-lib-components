@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <tButton>
       <span>teste</span>
     </tButton>
@@ -10,7 +8,7 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import tButton from '@/components/t-button.vue';
+import tButton from '@/components/TButton';
 
 export default {
   name: 'App',
