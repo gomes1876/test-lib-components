@@ -54,6 +54,6 @@
   ],
   "files": [
     "/src/components/**/index.vue",
-    "*.js"
+    "index.js"
   ]
 }
