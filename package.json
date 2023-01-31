@@ -52,7 +52,10 @@
     "last 2 versions",
     "not dead"
   ],
+  "exports": {
+    ".": "./src/components/**.vue"
+  },
   "files": [
-    "src/components/**.vue && tcomponents.js"
+    "index.js"
   ]
 }
