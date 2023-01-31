@@ -53,7 +53,6 @@
     "not dead"
   ],
   "files": [
-    "src/components/**.vue",
-    "tcomponents.js"
+    "src/components/**.vue src/components/**/index.vue && tcomponents.js"
   ]
 }
