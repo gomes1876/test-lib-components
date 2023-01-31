@@ -54,6 +54,6 @@
   ],
   "files": [
     "src/components/**.vue",
-    "TComponents.js"
+    "/TComponents.js"
   ]
 }
