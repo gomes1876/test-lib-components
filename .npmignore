@@ -1,7 +1,0 @@
-.storybook
-/public
-.npmrc
-Babel.config.js
-jsconfig.jsconfig
-package-lock.json
-vue.config.js
