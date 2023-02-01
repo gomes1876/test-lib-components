@@ -3,16 +3,23 @@
     <tButton>
       <span>teste</span>
     </tButton>
+    <TInput size=4 placeholder="placeholder test value" />
+    <TTextarea size=4 placeholder="example item" />
   </div>
 </template>
 
 <script>
 import tButton from '@/components/TButton';
-
+import TInput from '@/components/TInput';
+import TTextarea from '@/components/TTextarea'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 export default {
   name: 'App',
   components: {
-    tButton
+    tButton,
+    TInput,
+    TTextarea
   }
 }
 </script>
