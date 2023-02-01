@@ -28,10 +28,4 @@ export default {
     },
 }
 </script>
-
-
-
-
-
-
 <style scoped src="./t-textarea.css" />

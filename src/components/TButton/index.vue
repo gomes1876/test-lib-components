@@ -11,6 +11,7 @@
   
   ]" :style="styleIcon" @click="$emit('click')" :to="{ name: linkPage }">
     <div class="content-button">
+      <slot name="icon"></slot>
       <slot></slot>
     </div>
   </button>
@@ -54,6 +55,10 @@ export default {
       type: String,
       default: null,
     },
+    icon: {
+      type: String,
+      default: null
+    }
 
   },
   computed: {

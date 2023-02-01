@@ -5,7 +5,7 @@ export default {
     component: tTextarea,
     argTypes: {
         size: {
-            control: { type: 'text' },
+            control: { type: 'range', min: 1, max: 12, step: 1 },
         },
     },
 };

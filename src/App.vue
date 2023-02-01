@@ -3,17 +3,25 @@
     <tButton>
       <span>teste</span>
     </tButton>
+    <tButton>
+      <span>teste</span>
+    </tButton>
     <TInput size=4 placeholder="placeholder test value" />
     <TTextarea size=4 placeholder="example item" />
   </div>
 </template>
 
 <script>
+import Vue from 'vue'
 import tButton from '@/components/TButton';
 import TInput from '@/components/TInput';
 import TTextarea from '@/components/TTextarea'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import InlineSvg from 'vue-inline-svg';
+
+Vue.component('inline-svg', InlineSvg);
+
 export default {
   name: 'App',
   components: {

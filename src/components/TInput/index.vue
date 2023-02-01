@@ -27,16 +27,6 @@ export default {
     },
 }
 </script>
-
-
-
-
-
-
-
-
-
-
 <style scoped src="./t-input.css" />
 
 

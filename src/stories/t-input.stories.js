@@ -1,13 +1,10 @@
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
 import tInput from '@/components/TInput'
 export default {
     title: 'Troika_Design_System',
     component: tInput,
     argTypes: {
         size: {
-            control: { type: 'text' },
+            control: { type: 'range', min: 1, max: 12, step: 1 },
         },
     },
 };
