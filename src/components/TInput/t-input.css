@@ -12,4 +12,10 @@ input:focus {
   color: rgb(151, 73, 0);
 }
 
+.title {
+  color: rgb(151, 73, 0);
+  font-size: 0.8em;
+  align-self: flex-start;
+}
+
 /*# sourceMappingURL=t-input.css.map */

@@ -1,6 +1,7 @@
 <template>
     <div :class="`custom-search col-${size}`">
-        <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center flex-column">
+            <span v-if="title" class="title">{{ title }}</span>
             <b-form-input type="text" class="input" :placeholder="placeholder" />
         </div>
     </div>
@@ -24,6 +25,10 @@ export default {
             type: Number,
             default: 12,
         },
+        title: {
+            type: String,
+            default: null,
+        }
     },
 }
 </script>

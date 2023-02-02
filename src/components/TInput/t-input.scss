@@ -12,6 +12,11 @@ input:focus {
     color: rgba(151, 73, 0, 1)
 }
 
+.title {
+    color: rgba(151, 73, 0, 1);
+    font-size: .8em;
+    align-self: flex-start;
+}
 // input::placeholder {
 //     color: rgba(151, 73, 0, 1)
 // }
