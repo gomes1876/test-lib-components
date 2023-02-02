@@ -6,7 +6,10 @@
     <tButton>
       <span>teste</span>
     </tButton>
-    <TInput size=4 placeholder="placeholder test value" title="testname example:" />
+    <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
+      <TInput size=4 placeholder="placeholder test value" title="testname example:" />
+      <TInput size=4 placeholder="placeholder test value" title="testname example:" />
+      </div>
     <TInput size=4 placeholder="placeholder test value" />
     <TTextarea size=4 placeholder="example item" />
   </div>
