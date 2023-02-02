@@ -10,10 +10,12 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@casl/ability": "^5.4.3",
+    "@casl/vue": "1.1.1",
     "bootstrap": "^5.2.3",
     "bootstrap-vue": "^2.23.1",
     "core-js": "^3.8.3",
-    "vue": "^2.7.14",
+    "vue": "2.x",
     "vue-inline-svg": "^2.1.1"
   },
   "devDependencies": {
@@ -34,7 +36,7 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "vue-loader": "^15.10.1",
-    "vue-template-compiler": "^2.6.14"
+    "vue-template-compiler": "2.x"
   },
   "eslintConfig": {
     "root": true,
