@@ -17,6 +17,14 @@ export default {
     name: 't-textarea',
     components: {
         BFormTextarea
+    }, data() {
+        return { text: "", }
+    }, mounted() {
+        this.text = this.valueDef;
+    }, watch: {
+        text() {
+            this.$emit("input", this.text);
+        }
     },
     methods: {
         // onChangeText(event) {
@@ -37,7 +45,7 @@ export default {
             type: String,
             default: "",
         },
-        value: {
+        valueDef: {
             type: String,
             default: ""
         }, error: {
@@ -50,4 +58,6 @@ export default {
     },
 }
 </script>
+
+
 <style scoped src="./t-textarea.css" />
