@@ -12,7 +12,7 @@
     </div>
     <TInput title="example error" style="margin-bottom: 12px" v-model="text" valueDef="example" :size=4
       placeholder="placeholder test value" />
-    <TTextarea title="teste" :size=4 placeholder="example item" />
+    <TTextarea valueDef="yqwefqiwjef qwefjqweçlqwberlkqwnre " title="teste" :size=4 placeholder="example item" />
   </div>
 </template>
 

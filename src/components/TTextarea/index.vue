@@ -2,7 +2,7 @@
     <div :class="`custom-search col-${size}`">
         <div class="d-flex flex-column">
             <span class="align-self-start textarea-title">{{ title }}</span>
-            <b-form-textarea :placeholder="placeholder" :class="(error) ? 'error-input' : 'input'" />
+            <b-form-textarea :placeholder="placeholder" v-model="text" :class="(error) ? 'error-input' : 'input'" />
             <span v-if="errorMessage && error" class="message-error">{{ errorMessage }} example</span>
         </div>
     </div>
