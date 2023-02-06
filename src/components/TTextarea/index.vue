@@ -1,6 +1,7 @@
 <template>
     <div :class="`custom-search col-${size}`">
         <div class="d-flex align-items-center">
+            <span>{{ title }}</span>
             <b-form-textarea :placeholder="placeholder" />
         </div>
     </div>
@@ -25,6 +26,10 @@ export default {
             type: Number,
             default: 12,
         },
+        title: {
+            type: String,
+            default: "",
+        }
     },
 }
 </script>
