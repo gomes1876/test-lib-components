@@ -3,7 +3,7 @@
         <div class="d-flex align-items-center flex-column">
             <span v-if="title" :class="'title'">{{ title }}</span>
             <b-form-input v-model="text" type="text" :class="(error) ? 'error-input' : 'input'" :placeholder="placeholder" />
-            <span v-if="errorMessage" class="message-error">{{ errorMessage }} example</span>
+            <span v-if="errorMessage && error" class="message-error">{{ errorMessage }} example</span>
         </div>
     </div>
 </template>
