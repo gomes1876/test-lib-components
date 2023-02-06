@@ -1,7 +1,7 @@
 <template>
     <div :class="`custom-search col-${size}`">
-        <div class="d-flex align-items-center">
-            <span>{{ title }}</span>
+        <div class="d-flex flex-column">
+            <span class="align-self-start textarea-title">{{ title }}</span>
             <b-form-textarea :placeholder="placeholder" />
         </div>
     </div>

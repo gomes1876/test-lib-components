@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="p-2">
     <tButton>
       <span>teste</span>
     </tButton>
@@ -9,9 +9,9 @@
     <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
       <TInput size=4 placeholder="placeholder test value" title="testname example:" />
       <TInput size=4 placeholder="placeholder test value" title="testname example:" />
-      </div>
+    </div>
     <TInput size=4 placeholder="placeholder test value" />
-    <TTextarea size=4 placeholder="example item" />
+    <TTextarea title="teste" size=4 placeholder="example item" />
   </div>
 </template>
 
