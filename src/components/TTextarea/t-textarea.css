@@ -6,14 +6,26 @@ textarea {
 
 textarea:focus {
   box-shadow: none !important;
-  border: 1px solid rgb(151, 73, 0);
+  border: 1px solid rgb(76, 69, 65);
   outline: 0 none;
-  color: rgb(151, 73, 0);
+  color: rgb(76, 69, 65);
 }
 
 .textarea-title {
   font-size: small;
-  color: rgb(151, 73, 0);
+  color: rgb(76, 69, 65);
+}
+
+.message-error {
+  color: rgb(211, 47, 47);
+  align-self: flex-start;
+  font-size: 0.8em;
+}
+
+.error-input {
+  border: 1px solid rgb(211, 47, 47) !important;
+  outline: 0 none;
+  color: rgb(76, 69, 65);
 }
 
 

@@ -2,7 +2,8 @@
     <div :class="`custom-search col-${size}`">
         <div class="d-flex flex-column">
             <span class="align-self-start textarea-title">{{ title }}</span>
-            <b-form-textarea :placeholder="placeholder" />
+            <b-form-textarea :placeholder="placeholder" :class="(error) ? 'error-input' : 'input'" />
+            <span v-if="errorMessage" class="message-error">{{ errorMessage }} example</span>
         </div>
     </div>
 </template>
@@ -17,6 +18,12 @@ export default {
     components: {
         BFormTextarea
     },
+    methods: {
+        // onChangeText(event) {
+        //     // this.value = event.target.value;
+        //     console.log(this.value);
+        // },
+    },
     props: {
         placeholder: {
             type: String,
@@ -29,6 +36,16 @@ export default {
         title: {
             type: String,
             default: "",
+        },
+        value: {
+            type: String,
+            default: ""
+        }, error: {
+            type: Boolean,
+            default: true
+        }, errorMessage: {
+            type: String,
+            default: "Message error example"
         }
     },
 }

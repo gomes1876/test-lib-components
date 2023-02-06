@@ -6,12 +6,13 @@
     <tButton>
       <span>teste</span>
     </tButton>
-    <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
-      <TInput size=4 placeholder="placeholder test value" title="testname example:" />
-      <TInput size=4 placeholder="placeholder test value" title="testname example:" />
+    <div style="display: flex; flex-direction: row; justify-content: space-evenly; margin-bottom: 12px;">
+      <TInput :size=4 placeholder="placeholder test value" title="testname example:" />
+      <TInput :size=4 placeholder="placeholder test value" title="testname example:" />
     </div>
-    <TInput size=4 placeholder="placeholder test value" />
-    <TTextarea title="teste" size=4 placeholder="example item" />
+    <TInput title="example error" style="margin-bottom: 12px" v-model="text" valueDef="example" :size=4
+      placeholder="placeholder test value" />
+    <TTextarea title="teste" :size=4 placeholder="example item" />
   </div>
 </template>
 
@@ -27,7 +28,12 @@ import InlineSvg from 'vue-inline-svg';
 Vue.component('inline-svg', InlineSvg);
 
 export default {
-  name: 'App',
+  name: 'App', 
+  data() {
+    return {
+      text: "",
+    }
+  },
   components: {
     tButton,
     TInput,

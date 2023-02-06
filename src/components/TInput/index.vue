@@ -1,8 +1,9 @@
 <template>
     <div :class="`custom-search col-${size}`">
         <div class="d-flex align-items-center flex-column">
-            <span v-if="title" class="title">{{ title }}</span>
-            <b-form-input type="text" class="input" :placeholder="placeholder" />
+            <span v-if="title" :class="'title'">{{ title }}</span>
+            <b-form-input v-model="text" type="text" :class="(error) ? 'error-input' : 'input'" :placeholder="placeholder" />
+            <span v-if="errorMessage" class="message-error">{{ errorMessage }} example</span>
         </div>
     </div>
 </template>
@@ -14,6 +15,19 @@ import {
 
 export default {
     name: 't-input',
+    data() {
+        return {
+            text: "",
+        }
+    },
+    watch: {
+        text() {
+            this.$emit("input", this.text);
+        }
+    },
+    mounted() {
+        this.text = this.valueDef;
+    },
     components: {
         BFormInput
     }, props: {
@@ -28,6 +42,17 @@ export default {
         title: {
             type: String,
             default: null,
+        },
+        valueDef: {
+            type: String,
+            default: null,
+        },
+        error: {
+            type: Boolean,
+            default: true
+        }, errorMessage: {
+            type: String,
+            default: "example error message"
         }
     },
 }
