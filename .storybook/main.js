@@ -8,7 +8,9 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions"
+    'storybook-addon-designs',
+    '@etchteam/storybook-addon-status',
+    "storybook-addon-pseudo-states"
   ],
   webpackFinal: async (config, { configType }) => {
     config.module.rules.push({
@@ -25,6 +27,9 @@ module.exports = {
     return config;
   },
   "framework": "@storybook/vue",
+  'features': {
+    'interactionsDebugger': true,
+  },
   "core": {
     "builder": "@storybook/builder-webpack5"
   }
