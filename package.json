@@ -15,12 +15,14 @@
     "bootstrap": "^5.2.3",
     "bootstrap-vue": "^2.23.1",
     "core-js": "^3.8.3",
+    "storybook-addon-pseudo-states": "^1.15.2",
     "vue": "2.x",
     "vue-inline-svg": "^2.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
+    "@etchteam/storybook-addon-status": "^4.2.2",
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-interactions": "^6.5.16",

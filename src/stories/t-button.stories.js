@@ -10,6 +10,13 @@ export default {
     // component: tButton, "STORYBOOK_ADDON_DESIGNS/panel": {
     //     hidden: false,
     // },
+    parameters: {
+        status: {
+            type: 'beta', // 'beta' | 'stable' | 'deprecated' | 'releaseCandidate'
+            url: 'https://www.figma.com/file/aVF2ldvInW5FU2yhkSGmN8/Design-System-%E2%80%A2-Troika-%E2%80%A2-SFC?node-id=2734%3A51039&t=7bU6wQNxpHpl74Zf-1', // will make the tag a link
+            // statuses: { ...} // add custom statuses for this story here
+        }
+    },
     argTypes: {
         size: {
             control: { type: 'inline-radio' },
@@ -46,6 +53,8 @@ const Template = (args, { argTypes }) => {
     })
 };
 
+
+
 export const Button = Template.bind({});
 
 Button.args = {
@@ -58,8 +67,9 @@ Button.parameters = {
     design: {
         type: "figma",
         url: "https://www.figma.com/file/aVF2ldvInW5FU2yhkSGmN8/Design-System-%E2%80%A2-Troika-%E2%80%A2-SFC?node-id=2734%3A51039&t=7bU6wQNxpHpl74Zf-1",
-    },
+    }, pseudo: { hover: true }
 };
+
 
 
 
