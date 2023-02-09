@@ -50,10 +50,10 @@ export default {
             default: ""
         }, error: {
             type: Boolean,
-            default: true
+            default: false
         }, errorMessage: {
             type: String,
-            default: "Message error example"
+            default: ""
         }
     },
 }

@@ -49,10 +49,10 @@ export default {
         },
         error: {
             type: Boolean,
-            default: true
+            default: false
         }, errorMessage: {
             type: String,
-            default: "example error message"
+            default: ""
         }
     },
 }
