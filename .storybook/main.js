@@ -10,7 +10,7 @@ module.exports = {
     "@storybook/addon-essentials",
     'storybook-addon-designs',
     '@etchteam/storybook-addon-status',
-    "storybook-addon-pseudo-states"
+    "storybook-addon-pseudo-states",
   ],
   webpackFinal: async (config, { configType }) => {
     config.module.rules.push({

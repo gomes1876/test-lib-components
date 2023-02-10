@@ -62,7 +62,9 @@ Button.args = {
     size: 'md'
 };
 
-
+// Button.setTabs(
+//     [{ label: 'Sass', type: 'sass' }, { label: 'TypeScript', type: 'typescript' }]
+// );
 Button.parameters = {
     design: {
         type: "figma",
