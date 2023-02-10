@@ -29,6 +29,6 @@
   ],
   "files": [
     "/lib/src/components/**",
-    "/lib/index.js"
+    "/index.js"
   ]
 }
