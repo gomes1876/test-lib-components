@@ -1,5 +1,5 @@
 <template>
-  <button v-if="!dropdown" :class="[
+  <button :class="[
     'button-item',
     'text-semibold',
     disabled && 'disabled',
@@ -10,43 +10,22 @@
     variant,
   
   ]" :style="styleIcon" @click="$emit('click')" :to="{ name: linkPage }">
-<div v-if="!dropdown" class="content-button">
+<div class="content-button">
 
-  <div v-if="!dropdown">
+  <div>
     <slot name="icon">
     </slot>
   </div>
   <slot></slot>
 </div>
 </button>
-<div v-else-if="dropdown">
-  <b-dropdown variant="link" toggle-class="text-decoration-none" no-caret class="d-action-reasons">
-    <template v-slot:button-content>
-      <slot name="icon">
-      </slot>
-    </template>
-    <div v-for="(item, index) of itemsSelect">
-
-      <b-dropdown-item @click="item.click">
-        <span :id="item.title" class="d-itens m-1">
-          {{ item.title }}
-        </span>
-      </b-dropdown-item>
-    </div>
-  </b-dropdown>
-</div>
 </template>
 
 <script>
-import { BDropdown, BDropdownItem } from 'bootstrap-vue'
-
-const spans = document.getElementById('item');
-
 
 export default {
   name: "t-button",
   components: {
-    BDropdown, BDropdownItem
   },
   data() {
     return {
@@ -85,24 +64,7 @@ export default {
       type: Boolean,
       default: false
     },
-    itemsSelect: {
-      type: Array,
-      default: [
-        {},
-      ]
-    },
   },
-  // mounted() {
-  //   console.log('entra');
-
-  //   this.itemsSelect.forEach((item, index) => {
-  //     console.log(`${this.itemsSelect[index].title}`);
-  //     const element = document.getElementById(item.title + index)
-  //     console.log(element);
-  //     element.innerHTML = this.itemsSelect[index].icon
-  //   })
-
-  // },
   computed: {
     styleIcon() {
       return {

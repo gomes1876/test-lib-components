@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "storybook": "cd lib/ start-storybook -p 6006"
   },
   "dependencies": {
   },
