@@ -1,8 +1,14 @@
-import TButton from './lib/src/components/TButton/index.vue'
-import TInput from './lib/src/components/TInput/index.vue'
-import TTextarea from './lib/src/components/TTextarea/index.vue'
+import {
+    TButton,
+    TInput,
+    TTextarea,
+    TItemdropdown,
+    TDropdown
+} from './lib/index'
 export {
     TButton,
     TInput,
-    TTextarea
+    TTextarea,
+    TItemdropdown,
+    TDropdown
 }
