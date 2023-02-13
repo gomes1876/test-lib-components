@@ -4,7 +4,7 @@ import {
     TTextarea,
     TItemdropdown,
     TDropdown
-} from './lib/locaIndex.js'
+} from './lib/localIndex.js'
 export {
     TButton,
     TInput,
