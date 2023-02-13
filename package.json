@@ -30,7 +30,7 @@
   ],
   "files": [
     "/lib/src/components/**",
-    "/lib/src/localIndex.js",
+    "/lib/localIndex.js",
     "/index.js"
   ]
 }
