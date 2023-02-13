@@ -30,7 +30,7 @@
   ],
   "files": [
     "/lib/src/components/**",
-    "/lib/src/localImdec.js",
+    "/lib/src/localIndex.js",
     "/index.js"
   ]
 }
