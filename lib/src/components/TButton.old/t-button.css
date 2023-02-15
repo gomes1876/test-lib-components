@@ -129,21 +129,4 @@
   margin-right: 12px;
 }
 
-.dropdown {
-  padding: 0.6em !important;
-  padding-left: 0.8em !important;
-  align-items: center;
-  justify-content: center;
-  color: #9F5714;
-}
-
-.dropdown:hover {
-  border: 1px solid #9F5714;
-  background-color: #9F5714;
-}
-
-.icon-container {
-  align-self: center;
-}
-
 /*# sourceMappingURL=t-button.css.map */

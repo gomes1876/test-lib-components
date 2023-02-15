@@ -8,17 +8,17 @@
     `size-${size}`,
     type,
     variant,
-    dropdown && 'dropdown'
+  
   ]" :style="styleIcon" @click="$emit('click')" :to="{ name: linkPage }">
-    <div class="content-button">
+<div class="content-button">
 
-      <div>
-        <slot name="icon">
-        </slot>
-      </div>
-      <slot></slot>
-    </div>
-  </button>
+  <div>
+    <slot name="icon">
+    </slot>
+  </div>
+  <slot></slot>
+</div>
+</button>
 </template>
 
 <script>
@@ -62,7 +62,7 @@ export default {
     },
     dropdown: {
       type: Boolean,
-      default: true
+      default: false
     },
   },
   computed: {
@@ -94,51 +94,5 @@ export default {
   },
 }
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <style scoped src="./t-button.css" />

@@ -1,0 +1,9 @@
+.gorup-item-button-dropdown {
+  display: flex !important;
+  flex-direction: row !important;
+  width: max-content !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=buttomDropdown.css.map */
